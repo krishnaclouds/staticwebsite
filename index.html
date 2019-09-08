@@ -25,20 +25,36 @@
     }
 
     #emptable {
-      width: 60%;
-      margin-left: 20%;
+      width: 50%;
+      margin-left: 25%;
       background-color: #121A38;
       padding: 1%;
       padding-top: 2%;
       border-radius: 5px;
       margin-bottom: 1%;
       box-shadow: 0px 2px 8px 0px #121A38;
-      display: block;
+     
       color: rgba(238, 242, 245, 0.829);
       opacity:0.8;
       z-index:-10;
+      
+      
 
     }
+    #emptable > tbody
+    {
+    
+     width:100%;
+    
+      
+     
+    }
+      #emptable tr:first-child >td{
+               padding-left: 20%;
+      }
+    #emptable  tr:not(:first-child) >td {
+      padding-left: 10%;
+}
 
    #header{
 				box-shadow: 0 5px 5px -5px #121A38;
@@ -48,7 +64,7 @@
         position: fixed;
        left:0px;
        right: 0px;
-       top: 0px;
+       top: 2%;
        z-index: 3;
        height:14%;
    
@@ -67,14 +83,7 @@
       
     }
 
-    .main-text {
-      font-size: 16px;
-      font-family: Montserrat;
-    }
 
-    .sub-text {
-      font-size: 14px;
-    }
 
     .table-row {
       margin-top: 5%;
@@ -114,10 +123,11 @@
 .content
 {
   position: absolute;
-  top: 20%;
+  top: 20.5%;
   left: 0;
   right: 0;
   bottom: 0;
+ 
 
   overflow: auto;
 }
@@ -128,7 +138,7 @@
 <body>
   <div id="header" style="text-align: center">
     <img src="./img/emblem.png" style="float:left;height: 100px;width: 65x;"><img>
-    <img src="./img/isro-logo3.png" style="float:right ;height: 100px;width: 100px"></img>
+    <img src="./img/isro-logo.png" style="float:right ;height: 100px;width: 100px"></img>
     <p>Department of Space</br>Indian Space Research Organisation
       </br>
       Master Control Facility</br>
@@ -160,29 +170,59 @@
         <div class="empdetails">
     <table id="mytable">
       <tr>
+        <table id="emptable";>
+        
+          <tr>
+            <td rowspan="8"><img src="./img/no-photo.png" alt="no photo" class="image"></img></td>
+          </tr>
+          <tr>
+            <td>Channdi Kulshrestha</td>
+          </tr>
+          <tr >
+            <td>Scientist/Engineer SC</td>
+          </tr>
+          <tr >
+            <td>PPEG Budget and program planning</td>
+          </tr>
+          <tr >
+            <td>chandni.kul@mcf.gov.in</td>
+          </tr>
+          <tr >
+            <td>8427845376</td>
+          </tr>
+          <tr >
+            <td>MH00682</td>
+          </tr>
+          <tr >
+            <td>Ext : 3525</td>
+          </tr>
+         
+        </table>
+      </tr>
+      <tr>
         <table id="emptable">
           <tr>
             <td rowspan="8"><img src="./img/no-photo.png" alt="no photo" class="image"></img></td>
           </tr>
-          <tr class="main-text">
+          <tr >
             <td>Channdi Kulshrestha</td>
           </tr>
-          <tr class="sub-text">
+          <tr >
             <td>Scientist/Engineer SC</td>
           </tr>
-          <tr class="sub-text">
+          <tr >
             <td>PPEG Budget and program planning</td>
           </tr>
-          <tr class="sub-text">
+          <tr >
             <td>chandni.kul@mcf.gov.in</td>
           </tr>
-          <tr class="sub-text">
+          <tr >
             <td>8427845376</td>
           </tr>
-          <tr class="sub-text">
+          <tr >
             <td>MH00682</td>
           </tr>
-          <tr class="sub-text">
+          <tr >
             <td>Ext : 3525</td>
           </tr>
         </table>
@@ -192,53 +232,25 @@
           <tr>
             <td rowspan="8"><img src="./img/no-photo.png" alt="no photo" class="image"></img></td>
           </tr>
-          <tr class="main-text">
+          <tr >
             <td>Channdi Kulshrestha</td>
           </tr>
-          <tr class="sub-text">
+          <tr >
             <td>Scientist/Engineer SC</td>
           </tr>
-          <tr class="sub-text">
+          <tr >
             <td>PPEG Budget and program planning</td>
           </tr>
-          <tr class="sub-text">
+          <tr >
             <td>chandni.kul@mcf.gov.in</td>
           </tr>
-          <tr class="sub-text">
+          <tr >
             <td>8427845376</td>
           </tr>
-          <tr class="sub-text">
+          <tr >
             <td>MH00682</td>
           </tr>
-          <tr class="sub-text">
-            <td>Ext : 3525</td>
-          </tr>
-        </table>
-      </tr>
-      <tr>
-        <table id="emptable">
-          <tr>
-            <td rowspan="8"><img src="./img/no-photo.png" alt="no photo" class="image"></img></td>
-          </tr>
-          <tr class="main-text">
-            <td>Channdi Kulshrestha</td>
-          </tr>
-          <tr class="sub-text">
-            <td>Scientist/Engineer SC</td>
-          </tr>
-          <tr class="sub-text">
-            <td>PPEG Budget and program planning</td>
-          </tr>
-          <tr class="sub-text">
-            <td>chandni.kul@mcf.gov.in</td>
-          </tr>
-          <tr class="sub-text">
-            <td>8427845376</td>
-          </tr>
-          <tr class="sub-text">
-            <td>MH00682</td>
-          </tr>
-          <tr class="sub-text">
+          <tr >
             <td>Ext : 3525</td>
           </tr>
         </table>
@@ -248,25 +260,25 @@
             <tr>
               <td rowspan="8"><img src="./img/no-photo.png" alt="no photo" class="image"></img></td>
             </tr>
-            <tr class="main-text">
+            <tr >
               <td>Channdi Kulshrestha</td>
             </tr>
-            <tr class="sub-text">
+            <tr >
               <td>Scientist/Engineer SC</td>
             </tr>
-            <tr class="sub-text">
+            <tr >
               <td>PPEG Budget and program planning</td>
             </tr>
-            <tr class="sub-text">
+            <tr >
               <td>chandni.kul@mcf.gov.in</td>
             </tr>
-            <tr class="sub-text">
+            <tr >
               <td>8427845376</td>
             </tr>
-            <tr class="sub-text">
+            <tr >
               <td>MH00682</td>
             </tr>
-            <tr class="sub-text">
+            <tr >
               <td>Ext : 3525</td>
             </tr>
           </table>
