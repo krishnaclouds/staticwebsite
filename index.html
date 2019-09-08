@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <title>MCF</title>
   <style>
     .image {
@@ -31,23 +32,32 @@
       padding-top: 2%;
       border-radius: 5px;
       margin-bottom: 1%;
-      box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 2px 8px 0px #121A38;
       display: block;
       color: rgba(238, 242, 245, 0.829);
+      opacity:0.8;
 
     }
 
-    #header {
-      /* background-color: rgba(238, 242, 245, 0.829); */
-      background-image: url('./img/headerimagenew.png');
+   #header{
+				box-shadow: 0 5px 5px -5px #121A38;
+        padding-bottom: 2%;
+        margin-left:0%;
+        
+			}
+    #header > p
+    {
+      font-size:20px;
+      color:#314782;
+      display: inline;
+       text-shadow: 0px 1px #314782; 
+}
       
-      /* opacity:0.5; */
-      /* height:50% */
     }
 
     .main-text {
       font-size: 16px;
-      font-family: sans-serif;
+      font-family: Montserrat;
     }
 
     .sub-text {
@@ -60,7 +70,7 @@
 
     body {
 
-      background-color: rgba(238, 242, 245, 0.829);
+      /* background-color: rgba(238, 242, 245, 0.829); */
     }
 
     input[type=text] {
@@ -76,8 +86,7 @@
     }
 
     input[type=text]:focus {
-      width: 100%;
-    
+      
 
     }
     #empsearchoptions
@@ -86,6 +95,25 @@
       margin-left: 10%;
       margin-bottom: 0.5%;
     }
+    #employeesearch
+    {
+      margin-top:1%;
+      margin-bottom:1%;
+    }
+
+    .empdetails {
+  /* The image used */
+   background-image: url("./img/mcfhassanmono.png"); 
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
   </style>
 </head>
 
@@ -99,25 +127,28 @@
       Program Planning and Evaluation Group
     </p>
     </p>
+  
   </div>
+  
 
-  <div id="employeesearch">
-    <table id="empsearchoptions">
-      <tr>
-        <td><input type="radio" name="empsearch" class="empsearchname">
-          Search by Employee name</input></td>
-        <td><input type="text" placeholder="Enter Employee name" /></td>
+  <div class="parallax"></div>
 
-        <td><input type="radio" name="empsearch" class="empsearchdiv">
-          Search by Employee name</input></td>
-        <td><input type="text" placeholder="Enter Employee div" /></td>
-        </td>
-      </tr>
-
-    </table>
-  </div>
-
-  <div id="empdetails">
+  <div class="empdetails">
+      <div id="employeesearch">
+          <table id="empsearchoptions">
+            <tr>
+              <td><input type="radio" name="empsearch" class="empsearchname">
+                Search by Employee name</input></td>
+              <td><input type="text" placeholder="Enter Employee name" /></td>
+      
+              <td><input type="radio" name="empsearch" class="empsearchdiv">
+                Search by Employee name</input></td>
+              <td><input type="text" placeholder="Enter Employee div" /></td>
+              </td>
+            </tr>
+      
+          </table>
+        </div>
     <table id="mytable">
       <tr>
         <table id="emptable">
@@ -175,10 +206,66 @@
           </tr>
         </table>
       </tr>
+      <tr>
+        <table id="emptable">
+          <tr>
+            <td rowspan="8"><img src="./img/no-photo.png" alt="no photo" class="image"></img></td>
+          </tr>
+          <tr class="main-text">
+            <td>Channdi Kulshrestha</td>
+          </tr>
+          <tr class="sub-text">
+            <td>Scientist/Engineer SC</td>
+          </tr>
+          <tr class="sub-text">
+            <td>PPEG Budget and program planning</td>
+          </tr>
+          <tr class="sub-text">
+            <td>chandni.kul@mcf.gov.in</td>
+          </tr>
+          <tr class="sub-text">
+            <td>8427845376</td>
+          </tr>
+          <tr class="sub-text">
+            <td>MH00682</td>
+          </tr>
+          <tr class="sub-text">
+            <td>Ext : 3525</td>
+          </tr>
+        </table>
+      </tr>
+      <tr>
+          <table id="emptable">
+            <tr>
+              <td rowspan="8"><img src="./img/no-photo.png" alt="no photo" class="image"></img></td>
+            </tr>
+            <tr class="main-text">
+              <td>Channdi Kulshrestha</td>
+            </tr>
+            <tr class="sub-text">
+              <td>Scientist/Engineer SC</td>
+            </tr>
+            <tr class="sub-text">
+              <td>PPEG Budget and program planning</td>
+            </tr>
+            <tr class="sub-text">
+              <td>chandni.kul@mcf.gov.in</td>
+            </tr>
+            <tr class="sub-text">
+              <td>8427845376</td>
+            </tr>
+            <tr class="sub-text">
+              <td>MH00682</td>
+            </tr>
+            <tr class="sub-text">
+              <td>Ext : 3525</td>
+            </tr>
+          </table>
+        </tr>
     </table>
 
   </div>
-
+  <div class="parallax"></div>
 </body>
 
 </html>
